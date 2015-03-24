@@ -1,0 +1,50 @@
+# 
+# .screenrc
+# najib_screenrc
+# najib@magnifix.com.my
+# mnajib@gmail.com
+#
+# screen -S "NAJIB" -c najib_screenrc
+#
+
+#vbell off
+vbell on
+vbell_msg "   Wuff  ----  Wuff!!  "
+autodetach on
+startup_message off
+defscrollback 3000
+attrcolor b ".I"
+termcap xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+defbce "on"
+#
+defutf8 on
+
+#
+#caption always "%3n %t%? @%u%?%? [%h]%?%= %Y%m%d %c:%s"
+#hardstatus alwayslastline "%Lw"
+#caption always "%3n %t%?%= [%H] %Y%m%d %c:%s"
+caption always "%Lw%= [%H] %Y%m%d %c:%s"
+
+# XXX
+#caption always "%3n %t%? @%u%?%? [%h]%?%=%c:%s"
+#hardstatus alwayslastline "%Lw"
+
+#-----------
+#screen -t 'messages' 0
+#stuff "tail -F /var/log/messages\012"
+
+#screen -t 'dmesg' 1
+#stuff "tail -F /var/log/dmesg\012"
+
+#screen -t 'top' 2
+#stuff "top\012"
+
+#screen -t '3' 3
+#stuff "date\012"
+#stuff "uptime\012"
+#stuff "df -hT\012"
+
+#screen -t '4' 4
+
+#select 3
+
